@@ -554,18 +554,9 @@ video {
   --tw-contain-style:  ;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-1 {
@@ -574,10 +565,6 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
 }
 
 .mb-4 {
@@ -596,6 +583,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -604,8 +595,12 @@ video {
   height: 48px;
 }
 
-.min-h-\[260px\] {
-  min-height: 260px;
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .min-h-full {
@@ -620,12 +615,42 @@ video {
   width: 100%;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+@keyframes animate {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 60px;
+  }
+}
+
+.animate-animate {
+  animation: animate 0.5s linear backwards;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .place-content-center {
   place-content: center;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -636,8 +661,20 @@ video {
   justify-content: center;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .self-center {
@@ -722,10 +759,6 @@ video {
           background-clip: text;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -735,8 +768,30 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-\[60px\] {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-\[60px\] {
+  padding-top: 60px;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .text-center {
@@ -818,8 +873,18 @@ video {
     min-height: 100vh;
   }
 
-  .md\:w-full {
-    width: 100%;
+  @keyframes animate {
+    0% {
+      height: 0px;
+    }
+
+    100% {
+      height: 60px;
+    }
+  }
+
+  .md\:animate-animate {
+    animation: animate 0.5s linear backwards;
   }
 
   .md\:flex-row {
@@ -836,6 +901,10 @@ video {
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-3xl {
@@ -865,6 +934,10 @@ video {
 
   .lg\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
   }
 
   .lg\:text-4xl {

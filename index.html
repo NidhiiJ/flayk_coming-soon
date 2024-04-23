@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flayk Studio</title>
 
-    <link  href="./output.css" rel="stylesheet"/>
+    <link href="./output.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,122 +14,96 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-
-
-
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=typography"></script> 
-
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              Montserrat: ["Montserrat"],
-              "Noto-Sans": ['"Noto Sans"'],
-              "Comforter-Brush": ['"Comforter Brush"'],
-              Inter: ["Inter", "sans-serif"]
-            },
-          },
-        },
-      };
-    </script> -->
   </head>
 
   <body class="font-Inter">
     <!-- Header -->
-    <header class="w-vw flex flex-col md:flex-row md:justify-between ">
+    <header class="w-full flex flex-col md:flex-row md:justify-between">
       <div
-        class="md:w-full min-h-full bg-gradient-to-b from-teal-50 to-white p-10 pt-16 flex"
+        class="w-full min-h-full bg-gradient-to-b from-teal-50 to-white pt-[60px] pb-14 md:pt-0 flex flex-col gap-12 lg:gap-20 text-center justify-center"
       >
-      
-      
-        <div class="w-full text-center my-auto z-10">
-          <img src="assets/img/logo.png" alt="logo" class=" h-[48px] md:h-[56px]  mx-auto mb-4 md:mb-8">
-          <div class="mb-10">
-            <h1 class="font-bold mb-1 font-Inter text-xl md:text-3xl w-full text-black/90 ">
-              FLAYK STUDIO
-            </h1>
-            <p class=" text-[14px] md:text-base md:mx-14 text-black/70">
-              Web Design & Development Studio 
-            </p>
-          </div>
-
-          <h6
-            class="font-Montserrat font-bold  text-4xl md:text-5xl lg:text-6xl mb-14"
+        <div class="">
+          <img
+            src="assets/img/logo.png"
+            alt="logo"
+            class="h-[48px] md:h-[56px] mx-auto mb-4 md:mb-8"
+          />
+          <h1
+            class="font-bold mb-1 font-Inter text-xl md:text-3xl w-full text-black/90"
           >
-          
-            <span
-              class="uppercase bg-[#4C53DC] md:bg-gradient-to-r from-[#979BF4] from-0% via-[#4C53DC] via-60% to-[#2830D6] to-100%  text-transparent bg-clip-text ml-2"
-            >
-              Coming Soon
-            </span>
-          </h6>
+            FLAYK STUDIO
+          </h1>
+          <p class="text-[14px] md:text-base md:mx-14 text-black/70">
+            Web Design & Development Studio
+          </p>
+        </div>
 
-          <!-- Count down -->
-          <div class="w-full flex mb-10">
-            <ul
-              class="w-full flex place-content-center gap-5 px-5 mx-auto text-black/70"
-            >
-              <li>
-                <div
-                  class="font-bold border-dotted border-gray-400 rounded-[16px] border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
-                  id="cdD"
-                >
-                  00
-                </div>
-                <p class="text-center text-xs mt-2">Days</p>
-              </li>
+        <div
+          class="md:animate-animate font-Montserrat font-bold text-4xl md:text-5xl lg:text-6xl uppercase bg-[#4C53DC] md:bg-gradient-to-r from-[#979BF4] from-0% via-[#4C53DC] via-60% to-[#2830D6] to-100% text-transparent bg-clip-text"
+        >
+          Coming Soon
+        </div>
 
-              <li>
-                <div
-                  class="font-bold  border-dotted border-gray-400 rounded-[16px] border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
-                  id="cdH"
-                >
-                  00
-                </div>
-                <p class="text-center text-xs mt-2">Hours</p>
-              </li>
+        <!-- Count down -->
+        <div class="w-full flex mb-10">
+          <ul
+            class="w-full flex place-content-center gap-5 px-5 mx-auto text-black/70"
+          >
+            <li>
+              <div
+                class="font-bold border-dotted border-gray-400 rounded-[16px] border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
+                id="cdD"
+              >
+                00
+              </div>
+              <p class="text-center text-xs mt-2">Days</p>
+            </li>
 
-              <li>
-                <div
-                  class="font-bold  border-dotted border-gray-400 rounded-[16px] border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
-                  id="cdM"
-                >
-                  00
-                </div>
-                <p class="text-center text-xs mt-2">Minutes</p>
-              </li>
+            <li>
+              <div
+                class="font-bold border-dotted border-gray-400 rounded-[16px] border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
+                id="cdH"
+              >
+                00
+              </div>
+              <p class="text-center text-xs mt-2">Hours</p>
+            </li>
 
-              <li>
-                <div
-                  class="font-bold border-dotted border-gray-400 rounded-[16px] border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
-                  id="cdS"
-                >
-                  00
-                </div>
-                <p class="text-center text-xs mt-2">Seconds</p>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <div
+                class="font-bold border-dotted border-gray-400 rounded-[16px] border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
+                id="cdM"
+              >
+                00
+              </div>
+              <p class="text-center text-xs mt-2">Minutes</p>
+            </li>
+
+            <li>
+              <div
+                class="font-bold border-dotted border-gray-400 rounded-[16px] border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
+                id="cdS"
+              >
+                00
+              </div>
+              <p class="text-center text-xs mt-2">Seconds</p>
+            </li>
+          </ul>
         </div>
       </div>
- 
-      <div
-        class=" bg-[#4B52DB] w-full min-h-[260px] flex md:min-h-screen lg:w-[80%] "
-      >
-      <img src="assets/img/undercons.gif" class="self-center" alt="gif">
-      <!-- <video class="self-center " autoplay muted loop playsinline>
-        <source src="assets/img/cons.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-      </video> -->
+
+      <div class="bg-[#4B52DB] flex md:min-h-screen lg:w-[80%]">
+        <img src="assets/img/undercons.gif" class="self-center" alt="gif" />
       </div>
     </header>
     <footer class="bg-slate-900 p-6 md:p-10">
-      <p class="text-gray-300 text-center">Copyright © 2024 Flayk Studio - All Rights Reserved.</p>
+      <p class="text-gray-300 text-center">
+        Copyright © 2024 Flayk Studio - All Rights Reserved.
+      </p>
     </footer>
 
     <script>
-      var countDownEndDate = "May 15, 2024 09:00:00";
+      var countDownEndDate = "May 22, 2024 09:00:00";
 
       var endDate = new Date(countDownEndDate).getTime();
 
